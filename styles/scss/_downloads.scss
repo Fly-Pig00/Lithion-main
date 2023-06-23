@@ -1,0 +1,28 @@
+.downloads {
+  @apply flex flex-col space-y-10 py-10;
+  &__search {
+    &--input {
+      @apply form-control relative m-0 block w-full min-w-0 flex-auto rounded border-none bg-inputFocus  bg-clip-padding px-3 py-1.5 text-base font-normal shadow-sm outline-none transition ease-in-out focus:bg-inputFocus focus:ring-0;
+    }
+    &--button {
+      @apply btn flex items-center rounded bg-button px-6 py-2.5 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out hover:bg-buttonHover hover:shadow-lg focus:bg-buttonHover focus:shadow-lg focus:outline-none focus:ring-0 active:bg-buttonHover active:shadow-lg;
+    }
+  }
+  &__container{
+    @apply sm:grid grid-rows-1 grid-cols-3 gap-4;
+  }
+  &__category {
+    @apply flex flex-col space-y-2 mb-5;
+    &--title {
+      @apply mb-1 font-bold;
+    }
+  }
+  &__link {
+    @apply max-w-max
+        text-black;
+    &:hover {
+      @apply text-linkHover
+            underline;
+    }
+  }
+}

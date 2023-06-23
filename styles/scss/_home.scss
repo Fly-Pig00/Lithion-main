@@ -1,0 +1,53 @@
+.home {
+  @apply relative;
+  &__hero {
+    @apply relative h-screen pt-28;
+
+    &--slogan {
+      @apply relative top-40 lg:top-20 text-center uppercase  tracking-widest text-white;
+    }
+    &--image {
+      @apply absolute top-0 h-full w-full;
+    }
+  }
+  &__sections {
+    @apply flex flex-col sm:flex-row  w-full;
+    &--image {
+      @apply relative h-full w-full flex-1;
+    }
+    &--copy {
+      @apply flex flex-1 items-center justify-center;
+
+      & div {
+        @apply relative flex flex-col space-y-5 p-10;
+
+        h3 {
+          @apply w-max text-3xl sm:text-5xl capitalize;
+        }
+
+        p {
+          @apply font-normal;
+        }
+
+        a {
+          @apply w-max bg-tertiary px-3 py-2;
+        }
+      }
+    }
+  }
+  .brandBanner{
+    @apply hidden relative md:flex top-14 left-0 z-10 w-full justify-center p-10;
+
+    &__gradient{
+      @apply absolute top-0 bottom-0 left-0 right-0 h-full w-full  bg-gradient-to-b from-[#052448] opacity-80;
+    }
+
+    &__container{
+      @apply grid grid-cols-6 gap-x-12;
+    }
+
+    &__logos{
+      @apply relative mx-auto flex flex-col justify-center opacity-70 hover:opacity-100;
+    }
+  }
+}

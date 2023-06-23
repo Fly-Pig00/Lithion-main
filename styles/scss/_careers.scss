@@ -1,0 +1,19 @@
+.careers {
+  @apply flex flex-col space-y-10 py-20;
+
+  &__position {
+    @apply mb-3 flex items-end border-b border-secondary py-5;
+
+    h3 {
+      @apply flex-1 text-secondary;
+    }
+
+    p {
+      @apply text-secondary;
+    }
+
+    &--page {
+      @apply flex flex-col space-y-8 py-20;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.about {
+  @apply pb-10;
+
+  h1,
+  h2 {
+    @apply pb-3 sm:pb-5 uppercase;
+  }
+
+  &__container {
+    @apply sm:flex sm:space-x-10;
+  }
+
+  &__image {
+    @apply relative mb-5 h-40 flex-1 sm:mb-0 sm:h-auto;
+  }
+}

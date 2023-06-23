@@ -1,0 +1,63 @@
+.contact {
+  @apply flex flex-col space-y-10 py-20;
+
+  .emails {
+    @apply text-accent;
+  }
+
+  &__form {
+    &--fieldGroup {
+      @apply mb-3 sm:flex sm:space-x-10;
+    }
+    &--field {
+      @apply border-b p-1 outline-0 focus:bg-inputFocus;
+      &Container {
+        @apply flex flex-1 flex-col py-2;
+
+        label {
+          @apply text-sm font-medium;
+        }
+      }
+    }
+    &--error {
+      @apply text-xs text-red;
+
+      &Container {
+        @apply flex h-5 items-center;
+      }
+    }
+    &--button {
+      @apply rounded bg-black px-5 py-2 font-medium uppercase text-white hover:bg-accent;
+    }
+  }
+
+  
+}
+
+.locations{
+  @apply flex flex-col space-y-10;
+
+  &__row{
+    @apply w-full sm:grid grid-rows-1 grid-cols-3 md:space-x-5 xl:space-x-24;
+  }
+
+  &__region{
+    @apply mb-4 font-medium;
+  }
+
+  &__place{
+    @apply  lg:max-w-[230px] md:max-w-[210px] max-w-[185px] mb-5;
+  }
+
+  &__city{
+    @apply font-medium sm:text-xl;
+  }
+
+  &__company{
+    @apply font-medium mb-2;
+  }
+
+  &__address{
+    @apply font-normal text-tertiary;
+  }
+}
